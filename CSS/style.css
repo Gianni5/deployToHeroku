@@ -1,0 +1,372 @@
+/* CSS Document */
+
+*{
+	font-family: "Times New Roman", Times, serif;
+	
+}
+
+
+
+
+body{
+	min-width: 800px;
+}
+
+
+
+
+footer{
+	min-width: 400px;
+}
+
+/* nav style */
+
+
+nav > div a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  padding: 5px;
+  display:inline-block;
+ 
+  border-radius: 15px;
+  margin-top:2px;
+}
+
+nav > div ul {
+  display: inline;
+  text-align: center;
+  
+ 
+}
+
+nav > div ul li {
+	display: inline-block;
+
+	border-radius: 15px;
+	position: center;
+}
+
+nav >div  ul li:hover {
+	text-shadow: 1px 1px 1px black, 0 0 5px blue, 0 0 1px darkblue;
+}
+
+nav > div ul li:hover ul {
+	display: inline-block;
+}
+
+/* end of nav style */
+
+.marginAbout{
+	margin:6px;
+}
+
+#marRight{
+	margin-right: 50px;
+}
+
+#ulWidth{
+	width: 100%;
+    text-align: center;
+	
+}
+
+#center{ 
+	margin-right: 80px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+}
+
+#imgPg1{
+	vertical-align: middle;
+	border-radius: 50%;
+	box-shadow: 1px 1px 2px black, 0 0 5px blue, 0 0 1px darkblue;
+}
+
+#form{
+	float: right;
+	border: 1px solid black;
+	margin-right: 30px;
+	margin-bottom:40px;
+	text-align: right;
+	background-color: #ff9900;
+}
+
+
+
+#div2{
+	background-color: #f2f2f2;
+}
+ 
+#float{
+	text-align: justify;
+	padding-right: 10px;
+}
+
+#image2{
+	float: left;
+	margin-right: 10px;
+}
+
+#image{
+	width: 10px;
+	
+}
+
+#outer{ /*id*/
+   
+   /* center Website*/
+   min-width:400px; 
+	max-width: 1020px; 
+	margin: auto;
+	padding: 10px;
+}
+
+
+#article2{ 
+	
+	
+	min-height:400px;
+	margin: 1% 1% 1% 1%;
+	width: 45%;
+	float: left;
+}
+
+#aside1{
+	
+	margin: 16px 2px;
+	padding: 1%;
+    width: 29%;
+	margin-left: 50px;
+	float: left;
+	overflow: visible;
+	
+	
+}
+
+#aside2{ 
+	
+	min-height:400px;
+	margin: 1% 1% 1% 1%;
+	width: 100%;
+	float: left;
+
+	
+}
+
+#h3{
+	text-align:right;
+	margin-right: 2px;
+}
+
+
+#articleB{
+	border-right: 1px solid black;
+	
+
+}
+/*classes---------------------------------------------------------------------------*/
+.divCenter{
+	text-align: center;
+	
+}
+
+.clearfloat::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.imgPortfolio {
+	margin-left: 50px;
+	margin-top: 5px;
+}
+/*end classess------------------------------------------------------------------------*/
+footer, main{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	
+}
+
+footer > h3{
+	text-align: center;
+}
+
+
+a{
+	text-align: center;
+	
+}
+
+h1{
+	font-size: 50px;
+	text-shadow: 1px 1px gray;
+	text-align: center;
+	
+}
+
+h2{
+	text-align: center;
+	text-shadow: 1px 1px gray;
+	
+}
+h3{
+	border-bottom: 1px dashed #ff9900;
+}
+
+ul{
+    
+    
+    float: left;  
+
+}
+
+li{
+    
+	font-size: 18px;
+	
+	
+}
+
+header {
+	
+	min-height: auto;
+	padding-left: 4px;
+	margin: 4px ;
+	overflow: visible;
+	
+}
+
+nav{
+	
+	margin: 4px 2px;
+	min-height: 80px;
+	
+}
+
+main{
+	
+	margin: 4px 2px;
+	min-height: 750px;
+	padding: 4px;
+	
+}
+
+
+
+section{
+	
+	margin: 4px 2px;
+	padding: 1%;
+    width: 63%;
+	min-height: 700px;
+	float: left;
+	border-left:1px solid black;
+}
+
+article{
+	
+	
+	padding: 1%;
+	margin: 1% 1% 1% 1%;
+	width: 45%;
+	min-height: 500px;
+	float: left;
+}
+
+footer{
+	
+	height: 180px;
+	padding-left: 1%;
+	
+	
+}
+
+footer > h3{
+	
+	margin: 0;
+    margin-left: 450px;
+	width: 100px;
+}	
+
+form > input{
+
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+/* style for photography page*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 15%;
+  padding: 5px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

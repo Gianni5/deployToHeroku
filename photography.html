@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=" stylesheet" href="css/style.css " />
+
+
+</head>
+<body >
+<div id="outer" class="clearfloat" >	
+	<header >
+				
+		<h1>Photo Gallery</h1>
+	
+		
+	</header>
+		<div  class="clearfloat" >
+				
+			<nav  class="clearfloat">
+				<div>
+				  
+				  <ul id="ulWidth" class="clearfloat">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="Portfolio.html">Portfolio</a>
+					</li>
+				  </ul>
+				  
+				</div>
+			</nav>
+		</div>	
+				
+				<div class="row">
+				  
+				  <div class="column">
+					<img src="images/01albero.jpg" alt="01albero" style="width:100%" onclick="myFunction(this);">
+				  </div>
+				  
+				  <div class="column">
+					<img src="images/08.jpg" alt="08"  style="width:100%" onclick="myFunction(this);">
+				  </div>
+				  
+				  <div class="column">
+					<img src="images/10.jpg" alt="10"  style="width:100%" onclick="myFunction(this);">
+				  </div>
+				  
+				  <div class="column">
+					<img src="images/cliff.jpg" alt="cliff"  style="width:100%" onclick="myFunction(this);">
+				  </div>
+				  
+				  <div class="column">
+					<img src="images/02.jpg" alt="02"  style="width:100%" onclick="myFunction(this);">
+				  </div>
+				  
+				  <div class="column">
+					<img src="images/01.jpg" alt="01"  style="width:100%" onclick="myFunction(this);">
+				  </div>
+				  
+				  
+				  
+				</div>
+
+				<div class="container">
+	  			  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+				  <img id="expandedImg" src="#" alt="#" style="width:100%">
+				  <div id="imgtext"></div>
+				</div>
+
+	<footer  > 
+				
+				<h3>Contact
+				</h3>
+				
+				<ul id="contact" class="clearfloat">
+					
+					<li> e-mail: giovannicosta@protonmail.com </li>
+					<li> phone: 0480 191 737 </li>
+					
+					
+				</ul>
+				<form id="form" class="clearfloat">
+					<label for="firstName">First Name:</label>
+					<input type="text" id="firstName"><br>
+					
+					<label for="secondName">Second Name:</label>
+					<input type="text" id="secondName"><br>
+					
+					<label for="phone">Phone:</label>
+					<input type="number" id="phone"><br>
+					
+					<label for="email">E-mail:</label>
+					<input type="text" id="email"><br>
+					
+					<input id="center"  type="submit" value="Submit">
+					
+				</form>
+				
+				
+	</footer>
+</div>
+		<script>
+		function myFunction(imgs) {
+		  var expandImg = document.getElementById("expandedImg");
+		  
+		  expandImg.src = imgs.src;
+
+		  expandImg.parentElement.style.display = "block";
+		}
+		</script>
+
+</body>
+</html>
